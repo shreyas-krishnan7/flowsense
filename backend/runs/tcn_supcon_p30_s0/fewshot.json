@@ -1,0 +1,107 @@
+{
+  "new_services": [
+    "google-www",
+    "google-background",
+    "default-background",
+    "fontawesome",
+    "joinhoney",
+    "playradio",
+    "sme-sk",
+    "onesignal",
+    "alza-www",
+    "tiktok"
+  ],
+  "providers": {
+    "google-www": "google",
+    "google-background": "-",
+    "default-background": "-",
+    "fontawesome": "-",
+    "joinhoney": "-",
+    "playradio": "-",
+    "sme-sk": "-",
+    "onesignal": "-",
+    "alza-www": "alza",
+    "tiktok": "-"
+  },
+  "known_acc_0shot_prototype": 0.8978,
+  "criterion": {
+    "K": 10,
+    "min_new_acc": 0.7,
+    "max_known_drop": 0.02
+  },
+  "by_K": {
+    "1": {
+      "proto_new": {
+        "mean": 0.21629676103834994,
+        "std": 0.06619009715707512
+      },
+      "proto_known": {
+        "mean": 0.86757,
+        "std": 0.00616528588144945
+      },
+      "knn_new": {
+        "mean": 0.0221002274331425,
+        "std": 0.011942464397463156
+      },
+      "knn_known": {
+        "mean": 0.9163499999999999,
+        "std": 1.2412670766236366e-16
+      }
+    },
+    "5": {
+      "proto_new": {
+        "mean": 0.24883958775863424,
+        "std": 0.035008826292374354
+      },
+      "proto_known": {
+        "mean": 0.86893,
+        "std": 0.0046723388147693196
+      },
+      "knn_new": {
+        "mean": 0.005082212257100149,
+        "std": 0.004199420561471045
+      },
+      "knn_known": {
+        "mean": 0.9163500000000001,
+        "std": 3.535533905932348e-05
+      }
+    },
+    "10": {
+      "proto_new": {
+        "mean": 0.2657136087196904,
+        "std": 0.024750928423276624
+      },
+      "proto_known": {
+        "mean": 0.86699,
+        "std": 0.004535195695887876
+      },
+      "knn_new": {
+        "mean": 0.0035858147065792587,
+        "std": 0.002311239564172243
+      },
+      "knn_known": {
+        "mean": 0.9163600000000001,
+        "std": 5.477225575051058e-05
+      }
+    },
+    "20": {
+      "proto_new": {
+        "mean": 0.269867048801847,
+        "std": 0.023219099158724135
+      },
+      "proto_known": {
+        "mean": 0.8685199999999998,
+        "std": 0.0024232209969377414
+      },
+      "knn_new": {
+        "mean": 0.022370830347902236,
+        "std": 0.007362019008030702
+      },
+      "knn_known": {
+        "mean": 0.9163,
+        "std": 3.535533905932348e-05
+      }
+    }
+  },
+  "criterion_passed": false
+}

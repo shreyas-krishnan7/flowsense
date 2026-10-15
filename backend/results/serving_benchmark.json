@@ -1,0 +1,42 @@
+{
+  "model": "transformer_ce_p30_s1",
+  "server": "uvicorn serve:app (1 worker), same machine",
+  "machine": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel / 16 logical CPUs",
+  "payload": "real CESNET test flows (only real packets sent)",
+  "concurrency_1": {
+    "requests": 2000,
+    "throughput_rps": 368.3,
+    "p50_ms": 2.23,
+    "p95_ms": 5.31,
+    "p99_ms": 6.91,
+    "decision_mix": {
+      "classified": 0.6525,
+      "novel_traffic": 0.278,
+      "needs_review": 0.0695
+    }
+  },
+  "concurrency_4": {
+    "requests": 2000,
+    "throughput_rps": 735.5,
+    "p50_ms": 5.21,
+    "p95_ms": 8.0,
+    "p99_ms": 9.83,
+    "decision_mix": {
+      "classified": 0.6525,
+      "novel_traffic": 0.278,
+      "needs_review": 0.0695
+    }
+  },
+  "concurrency_16": {
+    "requests": 2000,
+    "throughput_rps": 884.8,
+    "p50_ms": 15.96,
+    "p95_ms": 33.01,
+    "p99_ms": 47.73,
+    "decision_mix": {
+      "classified": 0.6525,
+      "novel_traffic": 0.278,
+      "needs_review": 0.0695
+    }
+  }
+}

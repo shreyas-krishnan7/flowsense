@@ -1,0 +1,119 @@
+{
+  "run": "transformer_ce_p30_s0",
+  "E1_closed_set": {
+    "accuracy": 0.9282466666666667,
+    "macro_f1": 0.8905035467674649,
+    "per_class_f1": {
+      "apple-privaterelay": 0.999,
+      "cloudflare-cdnjs": 0.7095,
+      "connectad": 0.9666,
+      "discord": 0.9665,
+      "dns-doh": 0.9846,
+      "facebook-connect": 0.8586,
+      "facebook-gamesgraph": 0.9868,
+      "facebook-graph": 0.9047,
+      "facebook-media": 0.9174,
+      "facebook-messenger": 0.8166,
+      "facebook-rupload": 0.8783,
+      "facebook-web": 0.904,
+      "instagram": 0.9408,
+      "jsdelivr": 0.6316,
+      "microsoft-outlook": 0.9554,
+      "microsoft-substrate": 0.8219,
+      "openx": 0.9108,
+      "snapchat": 0.9817,
+      "spotify": 0.9715,
+      "whatsapp": 0.7039
+    },
+    "top_confusions": [
+      {
+        "true": "jsdelivr",
+        "pred": "cloudflare-cdnjs",
+        "rate": 0.324
+      },
+      {
+        "true": "cloudflare-cdnjs",
+        "pred": "jsdelivr",
+        "rate": 0.2312
+      },
+      {
+        "true": "microsoft-substrate",
+        "pred": "microsoft-outlook",
+        "rate": 0.1928
+      },
+      {
+        "true": "facebook-messenger",
+        "pred": "facebook-web",
+        "rate": 0.188
+      },
+      {
+        "true": "whatsapp",
+        "pred": "facebook-media",
+        "rate": 0.1846
+      }
+    ]
+  },
+  "E5_selective": {
+    "accuracy_at_coverage": {
+      "50%": 0.9914,
+      "70%": 0.9917,
+      "80%": 0.991,
+      "90%": 0.9703,
+      "95%": 0.9515,
+      "100%": 0.9282
+    },
+    "aurc": 0.013470027220255365
+  },
+  "E6_open_set": {
+    "knn_distance": {
+      "auroc": 0.9505,
+      "known_kept_at_val_thr": 0.9352,
+      "unknown_detected_at_val_thr": 0.8426,
+      "fpr_at_95tpr": 0.2576
+    },
+    "prototype": {
+      "auroc": 0.9063,
+      "known_kept_at_val_thr": 0.946,
+      "unknown_detected_at_val_thr": 0.6125,
+      "fpr_at_95tpr": 0.425
+    },
+    "dbscan_core": {
+      "auroc": 0.9388,
+      "known_kept_at_val_thr": 0.9423,
+      "unknown_detected_at_val_thr": 0.7524,
+      "fpr_at_95tpr": 0.2871
+    }
+  },
+  "E8_drift": {
+    "per_week": {
+      "2022-11-03": 0.9257,
+      "2022-11-10": 0.9274,
+      "2022-11-17": 0.9291,
+      "2022-11-24": 0.9314
+    },
+    "per_day": {
+      "2022-11-07": 0.929,
+      "2022-11-08": 0.9286,
+      "2022-11-09": 0.9201,
+      "2022-11-10": 0.9236,
+      "2022-11-11": 0.9272,
+      "2022-11-12": 0.9339,
+      "2022-11-13": 0.9358,
+      "2022-11-14": 0.9257,
+      "2022-11-15": 0.9311,
+      "2022-11-16": 0.9243,
+      "2022-11-17": 0.929,
+      "2022-11-18": 0.9242,
+      "2022-11-19": 0.9322,
+      "2022-11-20": 0.9245,
+      "2022-11-21": 0.9278,
+      "2022-11-22": 0.9342,
+      "2022-11-23": 0.9277,
+      "2022-11-24": 0.9297,
+      "2022-11-25": 0.936,
+      "2022-11-26": 0.9309,
+      "2022-11-27": 0.9249,
+      "2022-11-28": 0.9356
+    }
+  }
+}

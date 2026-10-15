@@ -1,0 +1,12 @@
+{
+  "run": "gbdt",
+  "encoder": "gbdt",
+  "loss": "-",
+  "packets": 30,
+  "params": 0,
+  "n_train": 300000,
+  "accuracy": 0.9124466666666666,
+  "macro_f1": 0.8717242585209368,
+  "train_time_s": 110.6,
+  "n_features": 101
+}

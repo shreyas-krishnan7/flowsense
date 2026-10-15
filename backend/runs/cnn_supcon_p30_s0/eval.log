@@ -1,0 +1,89 @@
+{
+  "run": "cnn_supcon_p30_s0",
+  "E1_closed_set": {
+    "accuracy": 0.9129133333333334,
+    "macro_f1": 0.8607784032839823,
+    "per_class_f1": {
+      "apple-privaterelay": 0.9992,
+      "cloudflare-cdnjs": 0.6388,
+      "connectad": 0.9352,
+      "discord": 0.9435,
+      "dns-doh": 0.9937,
+      "facebook-connect": 0.8219,
+      "facebook-gamesgraph": 0.9818,
+      "facebook-graph": 0.8846,
+      "facebook-media": 0.9026,
+      "facebook-messenger": 0.7939,
+      "facebook-rupload": 0.8481,
+      "facebook-web": 0.8914,
+      "instagram": 0.9296,
+      "jsdelivr": 0.5758,
+      "microsoft-outlook": 0.9402,
+      "microsoft-substrate": 0.7584,
+      "openx": 0.8923,
+      "snapchat": 0.9735,
+      "spotify": 0.9705,
+      "whatsapp": 0.5407
+    },
+    "top_confusions": [
+      {
+        "true": "jsdelivr",
+        "pred": "cloudflare-cdnjs",
+        "rate": 0.3286
+      },
+      {
+        "true": "cloudflare-cdnjs",
+        "pred": "jsdelivr",
+        "rate": 0.311
+      },
+      {
+        "true": "whatsapp",
+        "pred": "facebook-media",
+        "rate": 0.2697
+      },
+      {
+        "true": "microsoft-substrate",
+        "pred": "microsoft-outlook",
+        "rate": 0.2617
+      },
+      {
+        "true": "facebook-messenger",
+        "pred": "facebook-web",
+        "rate": 0.203
+      }
+    ]
+  },
+  "E5_selective": {
+    "accuracy_at_coverage": {
+      "50%": 0.9896,
+      "70%": 0.9892,
+      "80%": 0.9819,
+      "90%": 0.9558,
+      "95%": 0.9355,
+      "100%": 0.9129
+    },
+    "aurc": 0.01799657166808033
+  },
+  "E6_open_set": {
+    "knn_distance": {
+      "auroc": 0.9072,
+      "known_kept_at_val_thr": 0.945,
+      "unknown_detected_at_val_thr": 0.6166,
+      "fpr_at_95tpr": 0.413
+    },
+    "prototype": {
+      "auroc": 0.8913,
+      "known_kept_at_val_thr": 0.9465,
+      "unknown_detected_at_val_thr": 0.6083,
+      "fpr_at_95tpr": 0.5515
+    },
+    "dbscan_core": {
+      "auroc": 0.9006,
+      "known_kept_at_val_thr": 0.9455,
+      "unknown_detected_at_val_thr": 0.6034,
+      "fpr_at_95tpr": 0.446
+    }
+  }
+}
+
+Saved runs/cnn_supcon_p30_s0/eval.json and runs/cnn_supcon_p30_s0\plots/

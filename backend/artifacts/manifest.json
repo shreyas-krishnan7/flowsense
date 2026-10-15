@@ -1,0 +1,19 @@
+{
+  "run": "transformer_ce_p30_s1",
+  "encoder": "transformer",
+  "loss": "ce",
+  "seed": 1,
+  "k": 10,
+  "n_index": 300000,
+  "index": "hnsw",
+  "ef_search": 128,
+  "novelty_threshold": 0.08503510057926178,
+  "gap_threshold": 0.4020729959011078,
+  "threshold_policy": "novelty: 95% known-flow retention on validation; review: 10% lowest validation gap",
+  "parity": {
+    "onnx_vs_pytorch_max_abs": 3.3527612686157227e-07,
+    "onnx_vs_stored_max_abs": 3.725290298461914e-07,
+    "top1_label_agreement": 0.99951171875
+  },
+  "exported_at": "2026-10-15 13:35:59"
+}

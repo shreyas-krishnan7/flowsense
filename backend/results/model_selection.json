@@ -1,0 +1,316 @@
+{
+  "criterion": "mean validation macro-F1 (k-NN on embeddings), week-44 held-out flows",
+  "selected": "transformer + ce",
+  "configs": [
+    {
+      "config": "transformer + ce",
+      "n_seeds": 3,
+      "params": 298497,
+      "val_accuracy": [
+        0.9280777777777778,
+        0.0010463339881772145
+      ],
+      "val_macro_f1": [
+        0.8959348885329219,
+        0.0014813165821317713
+      ],
+      "test_accuracy": [
+        0.9283177777777777,
+        0.00018200529092835427
+      ],
+      "test_macro_f1": [
+        0.8892047644802893,
+        0.0011187056602680642
+      ]
+    },
+    {
+      "config": "gru + ce",
+      "n_seeds": 1,
+      "params": 431488,
+      "val_accuracy": [
+        0.9227333333333333,
+        0.0
+      ],
+      "val_macro_f1": [
+        0.8867849643680581,
+        0.0
+      ],
+      "test_accuracy": [
+        0.9261933333333333,
+        0.0
+      ],
+      "test_macro_f1": [
+        0.8852462754902067,
+        0.0
+      ]
+    },
+    {
+      "config": "gru + supcon",
+      "n_seeds": 1,
+      "params": 431488,
+      "val_accuracy": [
+        0.9214333333333333,
+        0.0
+      ],
+      "val_macro_f1": [
+        0.8803836772898188,
+        0.0
+      ],
+      "test_accuracy": [
+        0.92458,
+        0.0
+      ],
+      "test_macro_f1": [
+        0.8779827206313886,
+        0.0
+      ]
+    },
+    {
+      "config": "cnn + ce",
+      "n_seeds": 1,
+      "params": 141312,
+      "val_accuracy": [
+        0.9175666666666666,
+        0.0
+      ],
+      "val_macro_f1": [
+        0.8802711908102581,
+        0.0
+      ],
+      "test_accuracy": [
+        0.9209333333333334,
+        0.0
+      ],
+      "test_macro_f1": [
+        0.8775272607370453,
+        0.0
+      ]
+    },
+    {
+      "config": "tcn + ce",
+      "n_seeds": 3,
+      "params": 137280,
+      "val_accuracy": [
+        0.9155444444444445,
+        0.0007632775331375602
+      ],
+      "val_macro_f1": [
+        0.8775202092393454,
+        0.001852871495550252
+      ],
+      "test_accuracy": [
+        0.9176266666666666,
+        0.0005659603441152904
+      ],
+      "test_macro_f1": [
+        0.8729250727777703,
+        0.0006761833507897832
+      ]
+    },
+    {
+      "config": "transformer + supcon",
+      "n_seeds": 1,
+      "params": 298497,
+      "val_accuracy": [
+        0.9157333333333333,
+        0.0
+      ],
+      "val_macro_f1": [
+        0.8726315186136052,
+        0.0
+      ],
+      "test_accuracy": [
+        0.9196733333333333,
+        0.0
+      ],
+      "test_macro_f1": [
+        0.8702345771595793,
+        0.0
+      ]
+    },
+    {
+      "config": "tcn + supcon",
+      "n_seeds": 3,
+      "params": 137280,
+      "val_accuracy": [
+        0.9124111111111111,
+        0.0006406015691288591
+      ],
+      "val_macro_f1": [
+        0.8667967330209946,
+        0.0012859757550582876
+      ],
+      "test_accuracy": [
+        0.9156355555555556,
+        0.00032885885748777736
+      ],
+      "test_macro_f1": [
+        0.8634482839099032,
+        0.0013436276929585213
+      ]
+    },
+    {
+      "config": "cnn + supcon",
+      "n_seeds": 1,
+      "params": 141312,
+      "val_accuracy": [
+        0.9093666666666667,
+        0.0
+      ],
+      "val_macro_f1": [
+        0.8624906630747656,
+        0.0
+      ],
+      "test_accuracy": [
+        0.9128933333333333,
+        0.0
+      ],
+      "test_macro_f1": [
+        0.8607341645265094,
+        0.0
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "run": "cnn_ce_p30_s0",
+      "config": "cnn + ce",
+      "seed": 0,
+      "params": 141312,
+      "val_accuracy": 0.9175666666666666,
+      "val_macro_f1": 0.8802711908102581,
+      "test_accuracy": 0.9209333333333334,
+      "test_macro_f1": 0.8775272607370453
+    },
+    {
+      "run": "cnn_supcon_p30_s0",
+      "config": "cnn + supcon",
+      "seed": 0,
+      "params": 141312,
+      "val_accuracy": 0.9093666666666667,
+      "val_macro_f1": 0.8624906630747656,
+      "test_accuracy": 0.9128933333333333,
+      "test_macro_f1": 0.8607341645265094
+    },
+    {
+      "run": "gru_ce_p30_s0",
+      "config": "gru + ce",
+      "seed": 0,
+      "params": 431488,
+      "val_accuracy": 0.9227333333333333,
+      "val_macro_f1": 0.8867849643680581,
+      "test_accuracy": 0.9261933333333333,
+      "test_macro_f1": 0.8852462754902067
+    },
+    {
+      "run": "gru_supcon_p30_s0",
+      "config": "gru + supcon",
+      "seed": 0,
+      "params": 431488,
+      "val_accuracy": 0.9214333333333333,
+      "val_macro_f1": 0.8803836772898188,
+      "test_accuracy": 0.92458,
+      "test_macro_f1": 0.8779827206313886
+    },
+    {
+      "run": "tcn_ce_p30_s0",
+      "config": "tcn + ce",
+      "seed": 0,
+      "params": 137280,
+      "val_accuracy": 0.9164,
+      "val_macro_f1": 0.8796453706790943,
+      "test_accuracy": 0.91828,
+      "test_macro_f1": 0.8736889067786153
+    },
+    {
+      "run": "tcn_ce_p30_s1",
+      "config": "tcn + ce",
+      "seed": 1,
+      "params": 137280,
+      "val_accuracy": 0.9153,
+      "val_macro_f1": 0.8766718700193621,
+      "test_accuracy": 0.9173133333333333,
+      "test_macro_f1": 0.8724030053643977
+    },
+    {
+      "run": "tcn_ce_p30_s2",
+      "config": "tcn + ce",
+      "seed": 2,
+      "params": 137280,
+      "val_accuracy": 0.9149333333333334,
+      "val_macro_f1": 0.8762433870195796,
+      "test_accuracy": 0.9172866666666667,
+      "test_macro_f1": 0.8726833061902977
+    },
+    {
+      "run": "tcn_supcon_p30_s0",
+      "config": "tcn + supcon",
+      "seed": 0,
+      "params": 137280,
+      "val_accuracy": 0.9118333333333334,
+      "val_macro_f1": 0.8669138932432912,
+      "test_accuracy": 0.9154133333333333,
+      "test_macro_f1": 0.8627698629606391
+    },
+    {
+      "run": "tcn_supcon_p30_s1",
+      "config": "tcn + supcon",
+      "seed": 1,
+      "params": 137280,
+      "val_accuracy": 0.9123,
+      "val_macro_f1": 0.8654561861574182,
+      "test_accuracy": 0.91548,
+      "test_macro_f1": 0.8625791301435116
+    },
+    {
+      "run": "tcn_supcon_p30_s2",
+      "config": "tcn + supcon",
+      "seed": 2,
+      "params": 137280,
+      "val_accuracy": 0.9131,
+      "val_macro_f1": 0.8680201196622745,
+      "test_accuracy": 0.9160133333333333,
+      "test_macro_f1": 0.8649958586255589
+    },
+    {
+      "run": "transformer_ce_p30_s0",
+      "config": "transformer + ce",
+      "seed": 0,
+      "params": 298497,
+      "val_accuracy": 0.9284333333333333,
+      "val_macro_f1": 0.8957986744940651,
+      "test_accuracy": 0.9282333333333334,
+      "test_macro_f1": 0.8904963326362185
+    },
+    {
+      "run": "transformer_ce_p30_s1",
+      "config": "transformer + ce",
+      "seed": 1,
+      "params": 298497,
+      "val_accuracy": 0.9289,
+      "val_macro_f1": 0.8974796075928715,
+      "test_accuracy": 0.9285266666666666,
+      "test_macro_f1": 0.8885392034395133
+    },
+    {
+      "run": "transformer_ce_p30_s2",
+      "config": "transformer + ce",
+      "seed": 2,
+      "params": 298497,
+      "val_accuracy": 0.9269,
+      "val_macro_f1": 0.894526383511829,
+      "test_accuracy": 0.9281933333333333,
+      "test_macro_f1": 0.8885787573651361
+    },
+    {
+      "run": "transformer_supcon_p30_s0",
+      "config": "transformer + supcon",
+      "seed": 0,
+      "params": 298497,
+      "val_accuracy": 0.9157333333333333,
+      "val_macro_f1": 0.8726315186136052,
+      "test_accuracy": 0.9196733333333333,
+      "test_macro_f1": 0.8702345771595793
+    }
+  ]
+}

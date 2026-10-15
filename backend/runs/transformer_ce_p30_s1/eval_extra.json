@@ -1,0 +1,206 @@
+{
+  "run": "transformer_ce_p30_s1",
+  "calibration": {
+    "knn_vote_ece": 0.013320753893852198,
+    "softmax_ece": 0.004304292567570963
+  },
+  "open_set": {
+    "novelty_threshold": 0.0846455991268158,
+    "open_set_macro_f1_21cls": 0.8360855367127055,
+    "unknown_class_f1": 0.7862699696761255,
+    "known_macro_f1_with_rejection": 0.8385763150645344,
+    "closed_set_macro_f1_no_rejection": 0.8885352594076567,
+    "unknown_recall": 0.81158,
+    "known_false_alarm": 0.08426666666666667,
+    "accuracy_on_accepted_known": 0.9341802562609202
+  },
+  "unknown_detection_by_provider": {
+    "google": {
+      "detected": 0.8563,
+      "n": 39883
+    },
+    "(independent)": {
+      "detected": 0.6893,
+      "n": 6836
+    },
+    "(unmapped)": {
+      "detected": 0.5209,
+      "n": 2889
+    },
+    "alza": {
+      "detected": 0.5253,
+      "n": 356
+    },
+    "overleaf": {
+      "detected": 0.6111,
+      "n": 36
+    }
+  },
+  "unknown_detection_by_category": {
+    "Streaming media": {
+      "detected": 0.8462,
+      "n": 13153
+    },
+    "Other services and APIs": {
+      "detected": 0.7453,
+      "n": 12139
+    },
+    "Advertising": {
+      "detected": 0.8839,
+      "n": 5538
+    },
+    "Search": {
+      "detected": 0.8985,
+      "n": 5105
+    },
+    "default": {
+      "detected": 0.8903,
+      "n": 3309
+    },
+    "(unmapped)": {
+      "detected": 0.5209,
+      "n": 2889
+    },
+    "Antivirus": {
+      "detected": 0.9621,
+      "n": 2373
+    },
+    "Authentication services": {
+      "detected": 0.9373,
+      "n": 1786
+    },
+    "File sharing": {
+      "detected": 0.9709,
+      "n": 1067
+    },
+    "E-commerce": {
+      "detected": 0.4786,
+      "n": 631
+    },
+    "Analytics & Telemetry": {
+      "detected": 0.5271,
+      "n": 609
+    },
+    "Games": {
+      "detected": 0.6439,
+      "n": 570
+    },
+    "Blogs & News": {
+      "detected": 0.4609,
+      "n": 345
+    },
+    "Information systems": {
+      "detected": 0.7111,
+      "n": 225
+    },
+    "Social": {
+      "detected": 0.6452,
+      "n": 186
+    },
+    "Videoconferencing": {
+      "detected": 0.9143,
+      "n": 35
+    },
+    "Mail": {
+      "detected": 0.1379,
+      "n": 29
+    },
+    "Music": {
+      "detected": 1.0,
+      "n": 11
+    }
+  },
+  "unknown_detection_by_service_top15": {
+    "google-www": {
+      "detected": 0.8985,
+      "n": 5105
+    },
+    "google-ads": {
+      "detected": 0.9011,
+      "n": 4964
+    },
+    "google-services": {
+      "detected": 0.6323,
+      "n": 4574
+    },
+    "google-play": {
+      "detected": 0.7591,
+      "n": 4288
+    },
+    "google-gstatic": {
+      "detected": 0.9426,
+      "n": 3835
+    },
+    "youtube": {
+      "detected": 0.8264,
+      "n": 3548
+    },
+    "google-background": {
+      "detected": 0.8982,
+      "n": 3262
+    },
+    "google-fonts": {
+      "detected": 0.8279,
+      "n": 3044
+    },
+    "default-background": {
+      "detected": 0.5209,
+      "n": 2889
+    },
+    "google-safebrowsing": {
+      "detected": 0.9633,
+      "n": 2368
+    },
+    "google-usercontent": {
+      "detected": 0.9169,
+      "n": 1997
+    },
+    "google-authentication": {
+      "detected": 0.9514,
+      "n": 1524
+    },
+    "google-autofill": {
+      "detected": 0.9299,
+      "n": 885
+    },
+    "google-translate": {
+      "detected": 0.9486,
+      "n": 739
+    },
+    "google-calendar": {
+      "detected": 0.9427,
+      "n": 593
+    }
+  },
+  "known_false_alarm_by_service": {
+    "apple-privaterelay": 0.0322,
+    "cloudflare-cdnjs": 0.0253,
+    "connectad": 0.095,
+    "discord": 0.0565,
+    "dns-doh": 0.364,
+    "facebook-connect": 0.0128,
+    "facebook-gamesgraph": 0.0289,
+    "facebook-graph": 0.0463,
+    "facebook-media": 0.0846,
+    "facebook-messenger": 0.086,
+    "facebook-rupload": 0.0185,
+    "facebook-web": 0.0598,
+    "instagram": 0.0388,
+    "jsdelivr": 0.0303,
+    "microsoft-outlook": 0.0434,
+    "microsoft-substrate": 0.1224,
+    "openx": 0.1169,
+    "snapchat": 0.0614,
+    "spotify": 0.0722,
+    "whatsapp": 0.0823
+  },
+  "source_ip_separation": {
+    "unique_src_ips_train": 67102,
+    "test_known_with_unseen_src_ip": 0.21710666666666667,
+    "accuracy_unseen_src_ip": 0.9226800958054413,
+    "accuracy_seen_src_ip": 0.9301394826029941,
+    "macro_f1_unseen_src_ip": 0.8909301023647623,
+    "n_unseen": 32566,
+    "n_seen": 117434
+  }
+}

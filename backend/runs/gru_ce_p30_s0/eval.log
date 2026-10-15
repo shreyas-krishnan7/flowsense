@@ -1,0 +1,89 @@
+{
+  "run": "gru_ce_p30_s0",
+  "E1_closed_set": {
+    "accuracy": 0.9262,
+    "macro_f1": 0.8852499922541955,
+    "per_class_f1": {
+      "apple-privaterelay": 0.9983,
+      "cloudflare-cdnjs": 0.6988,
+      "connectad": 0.9542,
+      "discord": 0.9541,
+      "dns-doh": 0.9937,
+      "facebook-connect": 0.8455,
+      "facebook-gamesgraph": 0.9868,
+      "facebook-graph": 0.8983,
+      "facebook-media": 0.9148,
+      "facebook-messenger": 0.8381,
+      "facebook-rupload": 0.869,
+      "facebook-web": 0.9054,
+      "instagram": 0.941,
+      "jsdelivr": 0.621,
+      "microsoft-outlook": 0.9507,
+      "microsoft-substrate": 0.8091,
+      "openx": 0.9192,
+      "snapchat": 0.9775,
+      "spotify": 0.9768,
+      "whatsapp": 0.6526
+    },
+    "top_confusions": [
+      {
+        "true": "jsdelivr",
+        "pred": "cloudflare-cdnjs",
+        "rate": 0.317
+      },
+      {
+        "true": "cloudflare-cdnjs",
+        "pred": "jsdelivr",
+        "rate": 0.2315
+      },
+      {
+        "true": "whatsapp",
+        "pred": "facebook-media",
+        "rate": 0.2194
+      },
+      {
+        "true": "microsoft-substrate",
+        "pred": "microsoft-outlook",
+        "rate": 0.1982
+      },
+      {
+        "true": "facebook-messenger",
+        "pred": "facebook-web",
+        "rate": 0.1626
+      }
+    ]
+  },
+  "E5_selective": {
+    "accuracy_at_coverage": {
+      "50%": 0.9908,
+      "70%": 0.9906,
+      "80%": 0.9892,
+      "90%": 0.9683,
+      "95%": 0.9493,
+      "100%": 0.9262
+    },
+    "aurc": 0.014414107374462803
+  },
+  "E6_open_set": {
+    "knn_distance": {
+      "auroc": 0.884,
+      "known_kept_at_val_thr": 0.9432,
+      "unknown_detected_at_val_thr": 0.5655,
+      "fpr_at_95tpr": 0.4757
+    },
+    "prototype": {
+      "auroc": 0.8396,
+      "known_kept_at_val_thr": 0.948,
+      "unknown_detected_at_val_thr": 0.3954,
+      "fpr_at_95tpr": 0.5965
+    },
+    "dbscan_core": {
+      "auroc": 0.8546,
+      "known_kept_at_val_thr": 0.9469,
+      "unknown_detected_at_val_thr": 0.4515,
+      "fpr_at_95tpr": 0.5902
+    }
+  }
+}
+
+Saved runs/gru_ce_p30_s0/eval.json and runs/gru_ce_p30_s0\plots/

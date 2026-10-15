@@ -1,0 +1,14 @@
+torch>=2.0
+numpy
+pandas
+scikit-learn
+faiss-cpu
+scapy
+fastapi
+uvicorn[standard]
+onnx
+onnxruntime
+httpx
+pydantic
+cesnet-datazoo
+matplotlib

@@ -1,0 +1,563 @@
+{
+  "groups": {
+    "TCN + SupCon (k-NN)": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "accuracy_mean_std": [
+        0.9156355555555556,
+        0.00032885885748777736
+      ],
+      "macro_f1_mean_std": [
+        0.8634482839099032,
+        0.0013436276929585213
+      ],
+      "per_seed": {
+        "0": {
+          "accuracy": 0.9154133333333333,
+          "macro_f1": 0.8627698629606391
+        },
+        "1": {
+          "accuracy": 0.91548,
+          "macro_f1": 0.8625791301435116
+        },
+        "2": {
+          "accuracy": 0.9160133333333333,
+          "macro_f1": 0.8649958586255589
+        }
+      },
+      "per_class_f1_mean": {
+        "apple-privaterelay": 0.9989282705878294,
+        "cloudflare-cdnjs": 0.6433191091886004,
+        "connectad": 0.9443112647182282,
+        "discord": 0.948260754394905,
+        "dns-doh": 0.9932496415390103,
+        "facebook-connect": 0.8288219484816173,
+        "facebook-gamesgraph": 0.9830124384746832,
+        "facebook-graph": 0.8875816342684782,
+        "facebook-media": 0.9049653803271976,
+        "facebook-messenger": 0.7997191306512778,
+        "facebook-rupload": 0.8431227961788658,
+        "facebook-web": 0.8940003343990434,
+        "instagram": 0.9326146123843554,
+        "jsdelivr": 0.5832834809758186,
+        "microsoft-outlook": 0.9368894364393631,
+        "microsoft-substrate": 0.7476582703784741,
+        "openx": 0.8950639845552658,
+        "snapchat": 0.9769431924362344,
+        "spotify": 0.972878611297411,
+        "whatsapp": 0.5543413865214043
+      },
+      "per_class_f1_std": {
+        "apple-privaterelay": 6.394391742828396e-05,
+        "cloudflare-cdnjs": 0.01327054244704975,
+        "connectad": 0.0012674911572374797,
+        "discord": 0.002066742515639164,
+        "dns-doh": 0.0009725648413466333,
+        "facebook-connect": 0.0016406085738211354,
+        "facebook-gamesgraph": 2.203152870387825e-05,
+        "facebook-graph": 0.0009033747598051465,
+        "facebook-media": 0.0004870477906228034,
+        "facebook-messenger": 0.0032872114171548215,
+        "facebook-rupload": 0.00467428235334015,
+        "facebook-web": 0.002038854395468142,
+        "instagram": 0.001298476085482489,
+        "jsdelivr": 0.0035448827187664366,
+        "microsoft-outlook": 0.0007786034900286754,
+        "microsoft-substrate": 0.002367927774720973,
+        "openx": 0.0008165039180301452,
+        "snapchat": 0.0018477692937835725,
+        "spotify": 0.00037413657008641493,
+        "whatsapp": 0.011879974323833937
+      }
+    },
+    "TCN + cross-entropy (k-NN)": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "accuracy_mean_std": [
+        0.9176266666666666,
+        0.0005659603441152904
+      ],
+      "macro_f1_mean_std": [
+        0.8729250727777703,
+        0.0006761833507897832
+      ],
+      "per_seed": {
+        "0": {
+          "accuracy": 0.91828,
+          "macro_f1": 0.8736889067786153
+        },
+        "1": {
+          "accuracy": 0.9173133333333333,
+          "macro_f1": 0.8724030053643977
+        },
+        "2": {
+          "accuracy": 0.9172866666666667,
+          "macro_f1": 0.8726833061902977
+        }
+      },
+      "per_class_f1_mean": {
+        "apple-privaterelay": 0.9984861049069761,
+        "cloudflare-cdnjs": 0.6795161528938598,
+        "connectad": 0.9479770050898685,
+        "discord": 0.94937680923862,
+        "dns-doh": 0.9936254607325011,
+        "facebook-connect": 0.8274899918140743,
+        "facebook-gamesgraph": 0.9865866206057315,
+        "facebook-graph": 0.8859121534129732,
+        "facebook-media": 0.9040337811896656,
+        "facebook-messenger": 0.8118642448943616,
+        "facebook-rupload": 0.8436743901315177,
+        "facebook-web": 0.8933549506506872,
+        "instagram": 0.932603675587512,
+        "jsdelivr": 0.6073687526662694,
+        "microsoft-outlook": 0.9462680069781779,
+        "microsoft-substrate": 0.7875671309505883,
+        "openx": 0.8992166778358129,
+        "snapchat": 0.9718413935587596,
+        "spotify": 0.9722582977389607,
+        "whatsapp": 0.619479854678486
+      },
+      "per_class_f1_std": {
+        "apple-privaterelay": 0.00022975962786192647,
+        "cloudflare-cdnjs": 0.0023604084912943806,
+        "connectad": 0.002784173185067669,
+        "discord": 0.0016211816702513683,
+        "dns-doh": 0.000356648233067471,
+        "facebook-connect": 0.001809216410912057,
+        "facebook-gamesgraph": 0.001310227134364358,
+        "facebook-graph": 0.0004991740476661825,
+        "facebook-media": 0.0010473614663166911,
+        "facebook-messenger": 0.004100088520358166,
+        "facebook-rupload": 0.0037779606992635623,
+        "facebook-web": 0.0003942066060776457,
+        "instagram": 0.0008762502014411453,
+        "jsdelivr": 0.004070843166037789,
+        "microsoft-outlook": 0.0016171624421936932,
+        "microsoft-substrate": 0.00800569833519247,
+        "openx": 0.000694728504974634,
+        "snapchat": 0.00016181373304453956,
+        "spotify": 0.0007928856448812602,
+        "whatsapp": 0.01001316448724142
+      }
+    },
+    "TCN + cross-entropy (softmax)": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "accuracy_mean_std": [
+        0.9131,
+        0.0001404753833713997
+      ],
+      "macro_f1_mean_std": [
+        0.8648015346203363,
+        5.715558411464256e-05
+      ],
+      "per_seed": {
+        "0": {
+          "accuracy": 0.9131133333333333,
+          "macro_f1": 0.864867250353768
+        },
+        "1": {
+          "accuracy": 0.9129533333333333,
+          "macro_f1": 0.8647634001467435
+        },
+        "2": {
+          "accuracy": 0.9132333333333333,
+          "macro_f1": 0.8647739533604973
+        }
+      },
+      "per_class_f1_mean": {
+        "apple-privaterelay": 0.998115974777055,
+        "cloudflare-cdnjs": 0.6980461455701487,
+        "connectad": 0.937710810616622,
+        "discord": 0.9448058191684332,
+        "dns-doh": 0.9933159614577769,
+        "facebook-connect": 0.8277708697387327,
+        "facebook-gamesgraph": 0.9810063747951916,
+        "facebook-graph": 0.8820276463777782,
+        "facebook-media": 0.8985142503567575,
+        "facebook-messenger": 0.7877576222656796,
+        "facebook-rupload": 0.8616667062841558,
+        "facebook-web": 0.8870921775320451,
+        "instagram": 0.9285984757711562,
+        "jsdelivr": 0.609194481323044,
+        "microsoft-outlook": 0.9415444910505361,
+        "microsoft-substrate": 0.7570581347207095,
+        "openx": 0.8786158072230134,
+        "snapchat": 0.9675948512882272,
+        "spotify": 0.9674354719494572,
+        "whatsapp": 0.5481586201402031
+      },
+      "per_class_f1_std": {
+        "apple-privaterelay": 0.00019127988756596976,
+        "cloudflare-cdnjs": 0.018369160353621305,
+        "connectad": 0.0033466348040975618,
+        "discord": 0.0019052907017458214,
+        "dns-doh": 0.0007391064559686213,
+        "facebook-connect": 0.0014586822594983301,
+        "facebook-gamesgraph": 0.002085010044682916,
+        "facebook-graph": 0.0013239656831882023,
+        "facebook-media": 0.0016813235660082131,
+        "facebook-messenger": 0.008707190279481561,
+        "facebook-rupload": 0.006543219299161124,
+        "facebook-web": 0.0018508851042932214,
+        "instagram": 0.0007745847406619205,
+        "jsdelivr": 0.003776387208899665,
+        "microsoft-outlook": 0.0011933807019081466,
+        "microsoft-substrate": 0.011149271953959082,
+        "openx": 0.0017603547032787287,
+        "snapchat": 0.0008425434834441882,
+        "spotify": 0.0006163113200144148,
+        "whatsapp": 0.008609241437152417
+      }
+    },
+    "Transformer + cross-entropy (k-NN)": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "accuracy_mean_std": [
+        0.9283177777777777,
+        0.00018200529092835427
+      ],
+      "macro_f1_mean_std": [
+        0.8892047644802893,
+        0.0011187056602680642
+      ],
+      "per_seed": {
+        "0": {
+          "accuracy": 0.9282333333333334,
+          "macro_f1": 0.8904963326362185
+        },
+        "1": {
+          "accuracy": 0.9285266666666666,
+          "macro_f1": 0.8885392034395133
+        },
+        "2": {
+          "accuracy": 0.9281933333333333,
+          "macro_f1": 0.8885787573651361
+        }
+      },
+      "per_class_f1_mean": {
+        "apple-privaterelay": 0.998707482488853,
+        "cloudflare-cdnjs": 0.7062011863219008,
+        "connectad": 0.9668795062577927,
+        "discord": 0.9652612356806886,
+        "dns-doh": 0.9875566848123912,
+        "facebook-connect": 0.8577080347780145,
+        "facebook-gamesgraph": 0.9871087713216921,
+        "facebook-graph": 0.9037918302303457,
+        "facebook-media": 0.9176472190388685,
+        "facebook-messenger": 0.823216043880329,
+        "facebook-rupload": 0.8761257108214727,
+        "facebook-web": 0.9051603267420054,
+        "instagram": 0.9406017741222957,
+        "jsdelivr": 0.6308112726254997,
+        "microsoft-outlook": 0.9520915059995186,
+        "microsoft-substrate": 0.8075178657218353,
+        "openx": 0.9092122742041386,
+        "snapchat": 0.9832320342171332,
+        "spotify": 0.97271775587128,
+        "whatsapp": 0.6925467744697328
+      },
+      "per_class_f1_std": {
+        "apple-privaterelay": 0.0008158854965606727,
+        "cloudflare-cdnjs": 0.0030842609601948352,
+        "connectad": 0.0014306031793815924,
+        "discord": 0.002162253122413816,
+        "dns-doh": 0.004346053774340081,
+        "facebook-connect": 0.0008134545974087608,
+        "facebook-gamesgraph": 0.0017169463510093852,
+        "facebook-graph": 0.001214623217308693,
+        "facebook-media": 0.0018722390630973658,
+        "facebook-messenger": 0.006939756081428605,
+        "facebook-rupload": 0.0026452523858456144,
+        "facebook-web": 0.0013583430272688711,
+        "instagram": 0.00199671895378274,
+        "jsdelivr": 0.0014723498597565055,
+        "microsoft-outlook": 0.003238331579253566,
+        "microsoft-substrate": 0.013955721907271415,
+        "openx": 0.0016679042409173971,
+        "snapchat": 0.0014042388643677422,
+        "spotify": 0.0014563272423719594,
+        "whatsapp": 0.011868419280836909
+      }
+    },
+    "Transformer + cross-entropy (softmax)": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "accuracy_mean_std": [
+        0.9256133333333333,
+        0.00047642184855206497
+      ],
+      "macro_f1_mean_std": [
+        0.8832325225732441,
+        0.0030370792339471436
+      ],
+      "per_seed": {
+        "0": {
+          "accuracy": 0.92616,
+          "macro_f1": 0.8866422472841874
+        },
+        "1": {
+          "accuracy": 0.9253933333333333,
+          "macro_f1": 0.8822377188913757
+        },
+        "2": {
+          "accuracy": 0.9252866666666667,
+          "macro_f1": 0.8808176015441689
+        }
+      },
+      "per_class_f1_mean": {
+        "apple-privaterelay": 0.9989283852728716,
+        "cloudflare-cdnjs": 0.7372127069339024,
+        "connectad": 0.9625746273519113,
+        "discord": 0.9635308477366858,
+        "dns-doh": 0.9861583769183859,
+        "facebook-connect": 0.8556973342047658,
+        "facebook-gamesgraph": 0.9872550115868335,
+        "facebook-graph": 0.9013091275803916,
+        "facebook-media": 0.9152224102582368,
+        "facebook-messenger": 0.8019905407033718,
+        "facebook-rupload": 0.8888908173684071,
+        "facebook-web": 0.9018415107443946,
+        "instagram": 0.9374251361539611,
+        "jsdelivr": 0.6154298614966608,
+        "microsoft-outlook": 0.938317900037088,
+        "microsoft-substrate": 0.7584076798325805,
+        "openx": 0.9008820128184959,
+        "snapchat": 0.983219508464443,
+        "spotify": 0.9704354574528432,
+        "whatsapp": 0.659921198548648
+      },
+      "per_class_f1_std": {
+        "apple-privaterelay": 0.000320244726951439,
+        "cloudflare-cdnjs": 0.0049300133153499116,
+        "connectad": 0.0004942848177094883,
+        "discord": 0.0020964245194216155,
+        "dns-doh": 0.003315155563359983,
+        "facebook-connect": 0.00046466240811273633,
+        "facebook-gamesgraph": 0.0026577859293507445,
+        "facebook-graph": 0.0023784044047463256,
+        "facebook-media": 0.0005100473780880453,
+        "facebook-messenger": 0.010666253388311885,
+        "facebook-rupload": 0.0012307657240427552,
+        "facebook-web": 0.0007986354524342544,
+        "instagram": 0.0006179961116544418,
+        "jsdelivr": 0.009802153928868601,
+        "microsoft-outlook": 0.005125708550744161,
+        "microsoft-substrate": 0.026226115422113914,
+        "openx": 0.004291939216880207,
+        "snapchat": 0.0011633965385885229,
+        "spotify": 0.00175915457192437,
+        "whatsapp": 0.026541427535603984
+      }
+    },
+    "GBDT, ppi (90 values, fair)": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "accuracy_mean_std": [
+        0.8699644444444444,
+        0.011235193383754885
+      ],
+      "macro_f1_mean_std": [
+        0.8116688739475159,
+        0.017633186166804645
+      ],
+      "per_seed": {
+        "0": {
+          "accuracy": 0.8707733333333333,
+          "macro_f1": 0.8122207189863527
+        },
+        "1": {
+          "accuracy": 0.8807733333333333,
+          "macro_f1": 0.8290196599887739
+        },
+        "2": {
+          "accuracy": 0.8583466666666667,
+          "macro_f1": 0.793766242867421
+        }
+      },
+      "per_class_f1_mean": {
+        "apple-privaterelay": 0.9181796882633687,
+        "cloudflare-cdnjs": 0.7833852854930204,
+        "connectad": 0.8693651221064836,
+        "discord": 0.9306408567751966,
+        "dns-doh": 0.9415944755981588,
+        "facebook-connect": 0.8255120476978163,
+        "facebook-gamesgraph": 0.7707545729202391,
+        "facebook-graph": 0.8246821651928679,
+        "facebook-media": 0.8725597579267456,
+        "facebook-messenger": 0.682783448739381,
+        "facebook-rupload": 0.5924846655237795,
+        "facebook-web": 0.8297933568136716,
+        "instagram": 0.8800088575561098,
+        "jsdelivr": 0.7068850082819765,
+        "microsoft-outlook": 0.9038243196419645,
+        "microsoft-substrate": 0.6101448347071456,
+        "openx": 0.8193327212367568,
+        "snapchat": 0.9064816371665775,
+        "spotify": 0.9280484194385279,
+        "whatsapp": 0.6369162378705296
+      },
+      "per_class_f1_std": {
+        "apple-privaterelay": 0.029568244573523153,
+        "cloudflare-cdnjs": 0.009332057784054215,
+        "connectad": 0.02102541357012204,
+        "discord": 0.003633065825056548,
+        "dns-doh": 0.011504059531007443,
+        "facebook-connect": 0.0016887929329435774,
+        "facebook-gamesgraph": 0.026422291847086277,
+        "facebook-graph": 0.015354253056883559,
+        "facebook-media": 0.005536080445079306,
+        "facebook-messenger": 0.0362086972795839,
+        "facebook-rupload": 0.08340003470290314,
+        "facebook-web": 0.01826895014795516,
+        "instagram": 0.005368826099877449,
+        "jsdelivr": 0.02066211188557746,
+        "microsoft-outlook": 0.010167040370284822,
+        "microsoft-substrate": 0.07708330284039355,
+        "openx": 0.026065728081584326,
+        "snapchat": 0.01691476752192699,
+        "spotify": 0.009524646829642212,
+        "whatsapp": 0.028473246033462258
+      }
+    },
+    "GBDT, ppi_derived (fair)": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "accuracy_mean_std": [
+        0.8862800000000001,
+        0.014543342119334217
+      ],
+      "macro_f1_mean_std": [
+        0.8257894077746833,
+        0.017869082013104446
+      ],
+      "per_seed": {
+        "0": {
+          "accuracy": 0.86964,
+          "macro_f1": 0.805323645124868
+        },
+        "1": {
+          "accuracy": 0.89264,
+          "macro_f1": 0.8337488530740732
+        },
+        "2": {
+          "accuracy": 0.89656,
+          "macro_f1": 0.8382957251251086
+        }
+      },
+      "per_class_f1_mean": {
+        "apple-privaterelay": 0.9327301238094803,
+        "cloudflare-cdnjs": 0.7960790705256645,
+        "connectad": 0.9113720700407592,
+        "discord": 0.9434069933360595,
+        "dns-doh": 0.9543389346516197,
+        "facebook-connect": 0.8373214671113235,
+        "facebook-gamesgraph": 0.7701065218197461,
+        "facebook-graph": 0.8490556664585216,
+        "facebook-media": 0.8861387936489127,
+        "facebook-messenger": 0.7182853627152118,
+        "facebook-rupload": 0.5812904772919635,
+        "facebook-web": 0.8448434711690673,
+        "instagram": 0.89102152338863,
+        "jsdelivr": 0.7324434994303459,
+        "microsoft-outlook": 0.9047177726676617,
+        "microsoft-substrate": 0.6467169676636193,
+        "openx": 0.8422622486221942,
+        "snapchat": 0.9353213084675956,
+        "spotify": 0.9406225660025586,
+        "whatsapp": 0.59771331667273
+      },
+      "per_class_f1_std": {
+        "apple-privaterelay": 0.03198992454395686,
+        "cloudflare-cdnjs": 0.005442043478604372,
+        "connectad": 0.01843224889287319,
+        "discord": 0.019665860566083267,
+        "dns-doh": 0.009721043777423515,
+        "facebook-connect": 0.00420975270552374,
+        "facebook-gamesgraph": 0.02860608251782246,
+        "facebook-graph": 0.012535954815624322,
+        "facebook-media": 0.007553020449225608,
+        "facebook-messenger": 0.030400985248482438,
+        "facebook-rupload": 0.030913436693144766,
+        "facebook-web": 0.03280745440995221,
+        "instagram": 0.007896137950597116,
+        "jsdelivr": 0.006816429809858486,
+        "microsoft-outlook": 0.03449512939236793,
+        "microsoft-substrate": 0.07008918879315773,
+        "openx": 0.006930751740650973,
+        "snapchat": 0.0062768444813959155,
+        "spotify": 0.01633881431761358,
+        "whatsapp": 0.02989633740387714
+      }
+    }
+  },
+  "supcon_minus_ce": {
+    "accuracy": {
+      "per_seed": [
+        -0.002866666666666684,
+        -0.0018333333333333535,
+        -0.0012733333333333485
+      ],
+      "mean_std": [
+        -0.001991111111111129,
+        0.0008082995411035128
+      ]
+    },
+    "macro_f1": {
+      "per_seed": [
+        -0.01091904381797626,
+        -0.009823875220886125,
+        -0.007687447564738714
+      ],
+      "mean_std": [
+        -0.009476788867867033,
+        0.0016435191779604536
+      ]
+    }
+  },
+  "label_names": [
+    "apple-privaterelay",
+    "cloudflare-cdnjs",
+    "connectad",
+    "discord",
+    "dns-doh",
+    "facebook-connect",
+    "facebook-gamesgraph",
+    "facebook-graph",
+    "facebook-media",
+    "facebook-messenger",
+    "facebook-rupload",
+    "facebook-web",
+    "instagram",
+    "jsdelivr",
+    "microsoft-outlook",
+    "microsoft-substrate",
+    "openx",
+    "snapchat",
+    "spotify",
+    "whatsapp"
+  ],
+  "n_test_known": 150000,
+  "std": "sample standard deviation (ddof=1) across seeds"
+}

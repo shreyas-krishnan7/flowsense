@@ -1,0 +1,153 @@
+{
+  "run": "tcn_supcon_p30",
+  "E1_closed_set": {
+    "accuracy": 0.91544,
+    "macro_f1": 0.8634037313269758,
+    "per_class_f1": {
+      "apple-privaterelay": 0.9986,
+      "cloudflare-cdnjs": 0.643,
+      "connectad": 0.9442,
+      "discord": 0.9504,
+      "dns-doh": 0.9917,
+      "facebook-connect": 0.8331,
+      "facebook-gamesgraph": 0.9813,
+      "facebook-graph": 0.8872,
+      "facebook-media": 0.9056,
+      "facebook-messenger": 0.7916,
+      "facebook-rupload": 0.8479,
+      "facebook-web": 0.8945,
+      "instagram": 0.9312,
+      "jsdelivr": 0.5863,
+      "microsoft-outlook": 0.9357,
+      "microsoft-substrate": 0.7438,
+      "openx": 0.8951,
+      "snapchat": 0.9771,
+      "spotify": 0.9729,
+      "whatsapp": 0.5571
+    },
+    "top_confusions": [
+      {
+        "true": "cloudflare-cdnjs",
+        "pred": "jsdelivr",
+        "rate": 0.3247
+      },
+      {
+        "true": "jsdelivr",
+        "pred": "cloudflare-cdnjs",
+        "rate": 0.3136
+      },
+      {
+        "true": "microsoft-substrate",
+        "pred": "microsoft-outlook",
+        "rate": 0.2701
+      },
+      {
+        "true": "whatsapp",
+        "pred": "facebook-media",
+        "rate": 0.2605
+      },
+      {
+        "true": "facebook-messenger",
+        "pred": "facebook-web",
+        "rate": 0.2025
+      }
+    ]
+  },
+  "E5_selective": {
+    "accuracy_at_coverage": {
+      "50%": 0.9904,
+      "70%": 0.99,
+      "80%": 0.984,
+      "90%": 0.9586,
+      "95%": 0.9381,
+      "100%": 0.9154
+    },
+    "aurc": 0.0166879062992491
+  },
+  "E6_open_set": {
+    "knn_distance": {
+      "auroc": 0.9052,
+      "known_kept_at_val_thr": 0.9453,
+      "unknown_detected_at_val_thr": 0.6244,
+      "fpr_at_95tpr": 0.4307
+    },
+    "prototype": {
+      "auroc": 0.8828,
+      "known_kept_at_val_thr": 0.9485,
+      "unknown_detected_at_val_thr": 0.6008,
+      "fpr_at_95tpr": 0.6275
+    },
+    "dbscan_core": {
+      "auroc": 0.9015,
+      "known_kept_at_val_thr": 0.9449,
+      "unknown_detected_at_val_thr": 0.6213,
+      "fpr_at_95tpr": 0.4699
+    }
+  },
+  "E7_few_shot": {
+    "new_services": [
+      "google-www",
+      "google-ads",
+      "google-services",
+      "google-play",
+      "google-gstatic",
+      "youtube",
+      "google-background",
+      "google-fonts",
+      "default-background",
+      "google-safebrowsing"
+    ],
+    "1-shot": {
+      "new_services_acc": 0.0428,
+      "new_services_acc_std": 0.0156,
+      "known_services_acc": 0.9166
+    },
+    "5-shot": {
+      "new_services_acc": 0.0548,
+      "new_services_acc_std": 0.0153,
+      "known_services_acc": 0.9166
+    },
+    "10-shot": {
+      "new_services_acc": 0.0694,
+      "new_services_acc_std": 0.021,
+      "known_services_acc": 0.9165
+    },
+    "20-shot": {
+      "new_services_acc": 0.1327,
+      "new_services_acc_std": 0.0114,
+      "known_services_acc": 0.9164
+    }
+  },
+  "E8_drift": {
+    "per_week": {
+      "2022-11-03": 0.9161,
+      "2022-11-10": 0.9141,
+      "2022-11-17": 0.916,
+      "2022-11-24": 0.9165
+    },
+    "per_day": {
+      "2022-11-07": 0.9156,
+      "2022-11-08": 0.9173,
+      "2022-11-09": 0.9153,
+      "2022-11-10": 0.916,
+      "2022-11-11": 0.9155,
+      "2022-11-12": 0.9203,
+      "2022-11-13": 0.9245,
+      "2022-11-14": 0.9133,
+      "2022-11-15": 0.9127,
+      "2022-11-16": 0.9076,
+      "2022-11-17": 0.9184,
+      "2022-11-18": 0.9105,
+      "2022-11-19": 0.9154,
+      "2022-11-20": 0.9082,
+      "2022-11-21": 0.9144,
+      "2022-11-22": 0.9204,
+      "2022-11-23": 0.9165,
+      "2022-11-24": 0.9146,
+      "2022-11-25": 0.9181,
+      "2022-11-26": 0.9221,
+      "2022-11-27": 0.9079,
+      "2022-11-28": 0.9297
+    }
+  }
+}

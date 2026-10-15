@@ -1,0 +1,15 @@
+# environments / caches
+backend/.venv/
+__pycache__/
+.pytest_cache/
+# large generated data (rebuild with backend/reproduce.sh)
+backend/data/
+backend/runs/*/embeddings.npz
+backend/runs/*/model.pt
+backend/artifacts_backup_*/
+backend/artifacts/knn.index
+# local tool config
+.claude/
+# personal files (resume has phone number; interview notes) - keep local
+docs/resume.tex
+docs/pitch.md
